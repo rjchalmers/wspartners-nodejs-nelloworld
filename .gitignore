@@ -1,0 +1,8 @@
+src/ext
+BUILD
+BUILDROOT
+RPMS
+SOURCES
+SRPMS
+src/node_modules
+**/npm-debug.log
