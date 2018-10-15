@@ -35,12 +35,12 @@ release: clean prepare
 	# https://github.com/bbc/bbc-mock-tools for more information.  Also
 	# adds an extra part to the version string containing an
 	# auto-incrementing build number.
-	mock-build --os 7 --define "buildnum $(shell cosmos-release generate-version $(COMPONENT))"
+	mock-build --os 7 --define "buildnum $(shell cosmos-release generate-version $(wspartners-sandbox-nodejs-helloworld))"
 
 	# Send the RPM and other release metadata to Cosmos.  See
 	# https://github.com/bbc/cosmos-release/ for more information
-	cosmos-release service $(COMPONENT) RPMS/*.rpm
+	cosmos-release service $(wspartners-sandbox-nodejs-helloworld) RPMS/*.rpm
 
 deploy_int:
-	cosmos deploy $(COMPONENT) int -f
-	cosmos deploy-progress $(COMPONENT) int
+	cosmos deploy $(wspartners-sandbox-nodejs-helloworld) int -f
+	cosmos deploy-progress $(wspartners-sandbox-nodejs-helloworld) int
