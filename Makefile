@@ -1,7 +1,7 @@
 .PHONY: all clean npm-install prepare local release
 
 # PLEASE CHANGE THE FOLLOWING
-COMPONENT="wspartners-sandbox-nodejs-helloworld"
+COMPONENT="cosmos-component-name-goes-here"
 
 all: local
 
@@ -43,4 +43,4 @@ release: clean prepare
 
 deploy_int:
 	cosmos deploy $(COMPONENT) int -f
-	cosmos deploy-progress $(COMPONENT) int
+cosmos deploy-progress $(COMPONENT) int
