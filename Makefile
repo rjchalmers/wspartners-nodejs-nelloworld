@@ -43,4 +43,4 @@ release: clean prepare
 
 deploy_int:
 	cosmos deploy $(COMPONENT) int -f
-cosmos deploy-progress $(COMPONENT) int
+	cosmos deploy-progress $(COMPONENT) int
