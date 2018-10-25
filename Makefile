@@ -35,7 +35,8 @@ release: clean prepare
 	# https://github.com/bbc/bbc-mock-tools for more information.  Also
 	# adds an extra part to the version string containing an
 	# auto-incrementing build number.
-	mock-build --os 7 --define "buildnum $(shell cosmos-release generate-version $(COMPONENT))"
+	# mock-build --os 7 --define "buildnum $(shell cosmos-release generate-version $(COMPONENT))"
+	mock-build --os 7 --define "buildnum 4"
 
 	# Send the RPM and other release metadata to Cosmos.  See
 	# https://github.com/bbc/cosmos-release/ for more information
