@@ -62,6 +62,7 @@ BuildArch: x86_64
 # -----------------------------------------------------------------------------
 BuildRequires: npm
 BuildRequires: systemd
+BuildRequires: cosmos-release
 
 %description
 A hello world application
